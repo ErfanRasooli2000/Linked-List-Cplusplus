@@ -85,9 +85,15 @@ void print()
     }
 }
 
+//Updates The Spesific Index Of List
+void update(int n , int data)
+{
+    Node* pointers = (Node*) getPointer(n);
+    pointers->data = data;
+}
+
 //Returns List As Array
 //Deletes The Spesific Index Of List
-//Updates The Spesific Index Of List
 
 int main()
 {
@@ -135,5 +141,6 @@ int main()
     cin >> x;
     cout << "This is The Result:" << endl;
     insertN(n,x);
+    
     print();
 }
